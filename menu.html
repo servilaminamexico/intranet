@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario SSM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .custom-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            border: 3px solid #00796b;
+        }
+        .form-label {
+            font-weight: bold;
+            color: #00796b;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 2px solid #004d40;
+            border-radius: 8px;
+        }
+        .btn-primary {
+            background-color: #00796b;
+            border: none;
+            padding: 12px;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #004d40;
+        }
+        .mb-3 {
+            margin-bottom: 1rem;
+        }
+        .menu-selection {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .menu-label {
+            font-weight: normal;
+            color: #00796b;
+        }
+        .text-danger {
+            color: red;
+            font-size: 0.875em;
+        }
+        .menu-option {
+            background-color: #b2dfdb;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid #00796b;
+        }
+        .menu-option label {
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+<form class="custom-form mt-4 pt-2" action="https://summitmx.com/SSM/save_username.php" method="get">
+    <div class="mb-3">
+        <label class="form-label" for="username">SSM email</label>
+        <input type="text" class="form-control" id="username" placeholder="SSM email" name="username" value="">
+        <span class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 menu-selection">
+        <label class="form-label">Selecciona tu menú:</label>
+        <div class="menu-option">
+            <input type="radio" id="mexican" name="menu" value="comidas_tipicas_mexicanas">
+            <label class="menu-label" for="mexican">Comidas típicas mexicanas</label>
+            <ul>
+                <li>Lunes: Tacos al pastor</li>
+                <li>Martes: Enchiladas</li>
+                <li>Miércoles: Pozole</li>
+                <li>Jueves: Chiles en nogada</li>
+                <li>Viernes: Tamales</li>
+            </ul>
+        </div>
+        <div class="menu-option">
+            <input type="radio" id="fast_food" name="menu" value="comidas_rapidas">
+            <label class="menu-label" for="fast_food">Comidas rápidas</label>
+            <ul>
+                <li>Lunes: Hamburguesa</li>
+                <li>Martes: Pizza</li>
+                <li>Miércoles: Hot dogs</li>
+                <li>Jueves: Nuggets de pollo</li>
+                <li>Viernes: Sandwich</li>
+            </ul>
+        </div>
+        <div class="menu-option">
+            <input type="radio" id="healthy" name="menu" value="comidas_saludables">
+            <label class="menu-label" for="healthy">Comidas saludables</label>
+            <ul>
+                <li>Lunes: Ensalada de quinoa</li>
+                <li>Martes: Pollo a la plancha con verduras</li>
+                <li>Miércoles: Sopa de lentejas</li>
+                <li>Jueves: Pescado al vapor</li>
+                <li>Viernes: Ensalada César</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Enviar</button>
+    </div>
+</form>
+
+</body>
+</html>
