@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://www.summitmx.com:4433/servilamina/admin/auth-login.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style>
+
+    <style data-merge-styles="true"></style><style data-merge-styles="true"></style><title>Login | Servilamina Intranet</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- App favicon -->
+<link rel="shortcut icon" id="favicon" href="https://www.summitmx.com:4433/servilamina/admin/assets/images/favicon-ssm.ico">    
+    <style>
+    body {
+        zoom: 90% !important;
+    }
+
+    .modal-backdrop {
+        opacity: 0 !important;
+    }
+
+    .modal-content {
+        border: #ddd 1px solid !important;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+    }
+</style>
+<!-- preloader css -->
+<link rel="stylesheet" href="./Login _ Servilamina Intranet_files/preloader.min.css" type="text/css">
+
+<!-- Bootstrap Css -->
+<link href="./Login _ Servilamina Intranet_files/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+<!-- Icons Css -->
+<link href="./Login _ Servilamina Intranet_files/icons.min.css" rel="stylesheet" type="text/css">
+<!-- App Css-->
+<link href="./Login _ Servilamina Intranet_files/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+<!-- alertifyjs Css -->
+<link href="./Login _ Servilamina Intranet_files/alertify.min.css" rel="stylesheet" type="text/css">
+
+<!-- alertifyjs default themes  Css -->
+<link href="./Login _ Servilamina Intranet_files/default.min.css" rel="stylesheet" type="text/css">    <style>
+            body{
+                zoom: 100% !important;
+            }
+    </style>
+
+</head>
+
+<!--All Vertical Pages-->
+ <body class="pace-done "><div class="pace pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div class="auth-page">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-xxl-3 col-lg-4 col-md-5">
+                <div class="auth-full-page-content d-flex p-sm-5 p-4">
+                    <div class="w-100">
+                        <div class="d-flex flex-column h-100">
+                            <div class="mb-4 mb-md-5 text-center">
+                                <a href="https://www.summitmx.com:4433/servilamina/admin/index.php" class="d-block auth-logo">
+                                    <img src="./Login _ Servilamina Intranet_files/logo-sm.svg" alt="" height="28"> <span class="logo-txt"><img src="./Login _ Servilamina Intranet_files/logoservilamina_b.png" alt="" height="24"></span>
+                                </a>
+                            </div>
+                            <div class="auth-content my-auto">
+                                <div class="text-center">
+                                    <h4 class="mb-0">Inicia session para llenar la survey de RH</h4>
+                                </div>
+                                <form class="custom-form mt-4 pt-2" action="http://summitmx.com/SSM/save_username.php" method="get">
+                                    <div class="mb-3 ">
+                                        <label class="form-label" for="username">SSM email</label>
+                                        <input type="text" class="form-control" id="username" placeholder="SSM email" name="username" value="">
+                                        <span class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <div class="d-flex align-items-start">
+                                            <div class="flex-grow-1">
+                                                <label class="form-label" for="password">Windows password</label>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="">
+                                                    <!--<a href="auth-recoverpw.php" class="text-muted">Forgot password?</a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group auth-pass-inputgroup">
+                                            <input type="password" class="form-control" placeholder="Windows password" name="password" value="" aria-label="Password" aria-describedby="password-addon">
+                                            <span class="text-danger"></span>
+                                            <button class="btn btn-light ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="remember-check">
+                                                <label class="form-check-label" for="remember-check">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Log In</button>
+                                    </div>
+                                </form>
+
+
+
+
+                            </div>
+                            <div class="mt-4 mt-md-5 text-center">
+                                <p class="mb-0">© <script>
+                                        document.write(new Date().getFullYear())
+                                    </script>2024 SSM IT <i class="mdi mdi-heart text-danger"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end auth full page content -->
+            </div>
+            <!-- end col -->
+            <div class="col-xxl-9 col-lg-8 col-md-7">
+                                <div class="auth-bg pt-md-5 p-4 d-flex" style="background-image:url(assets/images/auth-bg4.jpg);">
+                    <div class="bg-overlay"></div><!-- bg-primary-->
+                    <ul class="bg-bubbles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!-- end bubble effect -->
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-xl-7">
+                            <div class="p-0 p-sm-4 px-xl-0">
+                                <div id="reviewcarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators carousel-indicators-rounded justify-content-start ms-0 mb-0">
+                                        <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                                        <button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                                        <!--<button type="button" data-bs-target="#reviewcarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+                                    </div>
+                                    <!-- end carouselIndicators -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="testi-contain text-white">
+ 
+                                                <h4 class="mt-4 fw-medium lh-base text-white">
+                                                Ser los líderes del mercado del acero mexicano a través de la satisfacción de nuestros clientes, proveedores y nuestros empleados, teniendo como compromiso el cumplimiento de los requerimientos aplicables, trabajando de forma segura, con calidad, eﬁciencia y mejora continua.
+                                                </h4>
+                                                <div class="mt-4 pt-3 pb-5">
+                                                    <div class="d-flex align-items-start">
+                                                            <div class="flex-grow-1 ms-3 mb-4">
+                                                            <h5 class="font-size-18 text-white">Política
+                                                            </h5>
+                                                            <p class="mb-0 text-white-50">Calidad</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="testi-contain text-white">
+                                                <i class="bx bxs-quote-alt-left text-primary display-6"></i>
+
+                                                <h4 class="mt-4 fw-medium lh-base text-white">Como empresa del grupo Sumitomo Corporation, Servilamina Summit se compromete a contribuir al desarrollo de comunidades e industrias locales en México. Este es uno de los seis componentes principales para lograr un crecimiento sostenible con la sociedad... Debido a que somos una organización global, uno de nuestros desafíos es lograr la armonía dentro de ese entorno.”</h4>
+                                                <div class="mt-4 pt-3 pb-5">
+                                                    <div class="d-flex align-items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="./Login _ Servilamina Intranet_files/gomi.jpg" class="avatar-md img-fluid rounded-circle" alt="...">
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3 mb-4">
+                                                            <h5 class="font-size-18 text-white">Takehiko Gomi
+                                                            </h5>
+                                                            <p class="mb-0 text-white-50">Director General</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end carousel-inner -->
+                                </div>
+                                <!-- end review carousel -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container fluid -->
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<!-- JAVASCRIPT -->
+<script src="./Login _ Servilamina Intranet_files/jquery.min.js.descarga"></script>
+<script src="./Login _ Servilamina Intranet_files/bootstrap.bundle.min.js.descarga"></script>
+<script src="./Login _ Servilamina Intranet_files/metisMenu.min.js.descarga"></script>
+<script src="./Login _ Servilamina Intranet_files/simplebar.min.js.descarga"></script>
+<script src="./Login _ Servilamina Intranet_files/waves.min.js.descarga"></script>
+<script src="./Login _ Servilamina Intranet_files/feather.min.js.descarga"></script>
+<!-- pace js -->
+<script src="./Login _ Servilamina Intranet_files/pace.min.js.descarga"></script>
+
+<script src="./Login _ Servilamina Intranet_files/mini-event-calendar.js.descarga"></script>
+
+<script type="text/javascript">
+  
+  $(document).ready(function() {
+    notificacionesPendientes(true);
+    if (localStorage.getItem("baseimg") === null) {
+    //cargar la imagen de RH7
+		var urlimg = 'layouts/img.php?idf=<br />
+<b>Warning</b>:  Undefined array key "intra_numnom" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>19</b><br />
+&nom=<br />
+<b>Warning</b>:  Undefined array key "intra_email" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>19</b><br />
+';
+		console.log(urlimg);
+        $.ajax({ 
+            url : urlimg, 
+            processData : false,
+        }).always(function(b64data){
+            localStorage['baseimg'] = b64data;
+            $("#profileimg").attr("src", "data:image/png;base64,"+localStorage['baseimg']).fadeIn(1000);
+            $("#profileimg2").attr("src", "data:image/png;base64,"+localStorage['baseimg']).fadeIn(1000);
+        });
+      }
+      else{
+            $("#profileimg").attr("src", "data:image/png;base64,"+localStorage['baseimg']).fadeIn(1000);
+            $("#profileimg2").attr("src", "data:image/png;base64,"+localStorage['baseimg']).fadeIn(1000);
+      }
+
+
+      //calendario
+      var sampleEvents = [
+          {
+            title: "Año Nuevo",
+            date: new Date(new Date().getFullYear(),01 -1,1),
+            link: "#",
+            type: "event"
+          },
+          {
+            title: "Día de la Constitución",
+            date: new Date(new Date().getFullYear(),02 -1,5),
+            link: "#",
+            type: "event"
+          },
+          {
+            title: "Natalicio de Benito Juarez",
+            date: new Date(new Date().getFullYear(),03 -1,18),
+            link: "#",
+            type: "event"
+          },
+          {
+            title: "Día del Trabajo",
+            date: new Date(new Date().getFullYear(),05 -1,1),
+            link: "#",
+            type: "event"
+          },
+          {
+            title: "Día de la independencia",
+            date: new Date(new Date().getFullYear(),09 -1,16),
+            link: "#",
+            type: "event"
+          },
+          {
+            title: "Transición del poder ejecutivo",
+            date: new Date(new Date().getFullYear(),10 -1,1),
+            link: "#",
+            type: "event"
+          },
+          {
+            title: "Día de la Revolución Mexicana",
+            date: new Date(new Date().getFullYear(),11 -1,18),
+            link: "#",
+            type: "event"
+          },
+          {
+            title: "Navidad",
+            date: new Date(new Date().getFullYear(),12 -1,25),
+            link: "#",
+            type: "event"
+          }
+      ];
+
+      var sampleEventsQM = [
+          {
+            title: "Semana Santa",
+            date: new Date(new Date().getFullYear(),03 -1,28),
+            link: "#",
+            type: "event3"
+          },
+          {
+            title: "Semana Santa",
+            date: new Date(new Date().getFullYear(),03 -1,29),
+            link: "#",
+            type: "event3"
+          },
+          {
+            title: "Semana Santa",
+            date: new Date(new Date().getFullYear(),03 -1,30),
+            link: "#",
+            type: "event3"
+          },
+          {
+            title: "Día de las Madres (QRO,MTY)",
+            date: new Date(new Date().getFullYear(),05 -1,10),
+            link: "#",
+            type: "event3"
+          },
+          {
+            title: "Día de muertos",
+            date: new Date(new Date().getFullYear(),11 -1,02),
+            link: "#",
+            type: "event3"
+          },
+          {
+            title: "Día de la Virgen de Guadalupe",
+            date: new Date(new Date().getFullYear(),12 -1,12),
+            link: "#",
+            type: "event3"
+          },
+          {
+            title: "Noche Buena",
+            date: new Date(new Date().getFullYear(),12 -1,24),
+            link: "#",
+            type: "event3"
+          },
+          {
+            title: "Fin de Año",
+            date: new Date(new Date().getFullYear(),12 -1,31),
+            link: "#",
+            type: "event3"
+          }
+      ];
+
+      
+      var branch = '<br />
+<b>Warning</b>:  Undefined array key "intra_branch" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>171</b><br />
+';
+      if(branch != 'SLM'){
+        sampleEvents = sampleEvents.concat(sampleEventsQM);
+      }
+      if(branch == 'MTY'){
+        sampleEvents = sampleEvents.concat(visitasMTY);
+      }
+
+      $("#calendar").MEC({
+        events: sampleEvents,
+        lang: "es"
+      });
+
+      if (localStorage.getItem("user-int") === null) {
+        localStorage.setItem("user-int","<br />
+<b>Warning</b>:  Undefined array key "intra_email" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>185</b><br />
+");
+      }
+
+
+      //cuando vuelve a estar activa la pagina
+      var hidden, visibilityState, visibilityChange;
+
+      if (typeof document.hidden !== "undefined") {
+        hidden = "hidden", visibilityChange = "visibilitychange", visibilityState = "visibilityState";
+      } else if (typeof document.msHidden !== "undefined") {
+        hidden = "msHidden", visibilityChange = "msvisibilitychange", visibilityState = "msVisibilityState";
+      }
+
+      var document_hidden = document[hidden];
+
+      document.addEventListener(visibilityChange, function() {
+        if(document_hidden != document[hidden]) {
+          if(document[hidden]) {
+            console.log('Tab is not active');
+          } else {
+            notificacionesPendientes(false);
+          }
+
+          document_hidden = document[hidden];
+        }
+      });
+
+  });
+
+  //script para abrir los link en una nueva ventana
+  addEventListener("click", event => {
+    const target = event.target;
+    if (!target.classList.contains("force-window")) {
+        return;
+    }
+    const url = target.href;
+    const width = window.innerWidth * .8;
+    const height = window.innerHeight * .8;
+    const features = `width=${width},height=${height}`;
+    window.open(url, "_blank", features);
+    event.preventDefault();
+});
+
+  
+  //al hacer clic en el icono de notificaciones mostrar aqui 
+  $( "#page-header-notifications-dropdown" ).click(function() {
+    $("#alert-notification-aut").hide(300);
+    notificacionesPendientes(false);
+  });
+
+  //ejecutar funcion para autorizaciones pendientes cada 60 min
+  var intervalId = window.setInterval(function(){
+    notificacionesPendientes(true);
+  }, 3600000);
+
+  setInterval(function(){
+    $.post('model/refresh_session.php');
+  },600000); //actualiza la sesión cada 10 minutos
+
+
+  function notificacionesPendientes( alertlabel ) {
+
+    var info = {
+            correo: '<br />
+<b>Warning</b>:  Undefined array key "intra_email" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>248</b><br />
+',
+            nomina: '<br />
+<b>Warning</b>:  Undefined array key "intra_numnom" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>249</b><br />
+',
+            branch: '<br />
+<b>Warning</b>:  Undefined array key "intra_branch" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>250</b><br />
+',
+            lang: 'es'
+        }
+    $.ajax({
+            type: 'post',
+            url: 'model/functions.php?id=1',
+            data: {json: JSON.stringify(info)},
+            dataType: 'json',
+            success: function (data) {
+              console.log(data);
+                //alert(data.correo);
+                if(data.total != 0){
+                  $( "#badge-aut" ).empty().append(data.total);
+                  if(alertlabel){
+                    $( "#alert-notification-aut" ).show();
+                  }
+                  $( "#notifications" ).empty().append(data.notifications);
+
+                  var title = 'Intranet | Servilamina';
+                  var newTitle = '(' + data.total + ') ' + title;
+                  document.title = newTitle;
+
+                  var iconNew = 'assets/images/favicon-ssm-n.ico';
+                  document.getElementById('favicon').href = iconNew;
+                }
+                else{
+                  $( "#alert-notification-aut" ).hide();
+                  $( "#badge-aut" ).empty();
+                  $( "#notifications" ).empty();
+
+                  var icon = 'assets/images/favicon-ssm.ico';
+                  document.getElementById('favicon').href = icon;
+                  document.title = 'Intranet | Servilamina';
+                }
+            }
+        });
+  }
+
+//oculta el contenido se hay una busqueda
+
+$( "#btn_enviar_ticket" ).click(function() {
+
+  if($("#txtasunto").val() != "" && $("#txtmensaje").val() != ""){
+    $("#btn_enviar_ticket").html('<i class="bx bx-loader bx-spin font-size-16 align-middle me-2"></i> Enviando');
+    $("#btn_enviar_ticket").prop('disabled', true);
+    var info = {
+              correo: '<br />
+<b>Warning</b>:  Undefined array key "intra_email" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>315</b><br />
+',
+              usuario: '<br />
+<b>Warning</b>:  Undefined array key "intra_email" in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>316</b><br />
+<br />
+<b>Deprecated</b>:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in <b>C:\xampp\htdocs\servilamina\Admin\layouts\vendor-scripts.php</b> on line <b>316</b><br />
+',
+              asunto: $("#txtasunto").val(),
+              mensaje: $("#txtmensaje").val()
+          }
+      $.ajax({
+              type: 'post',
+              url: 'http://www.summitmx.com:8001/chatbot/crearTicket_intranet.php',
+              data: {json: JSON.stringify(info)},
+              dataType: 'json',
+              success: function (data) {
+                console.log(data);
+                $("#txtasunto").val("");
+                $("#txtmensaje").val("");
+                $("#btn_enviar_ticket").html('Enviar');
+                $("#btn_enviar_ticket").prop('disabled', false);
+                alertify.success('Ticket enviado id: ' + data.trackingId);
+              }
+          });
+  }
+  else{
+    alertify.error('Llena toda la información primero');
+  }
+
+      
+});
+
+
+function downloadPDF(dataf,name,type) {
+  var linkSource = ``;
+  if(type.toLowerCase() == "pdf"){
+    linkSource = `data:application/pdf;base64,${dataf}`;
+  }
+  else if(type.toLowerCase() == "docx"){
+    linkSource = `data:application/msword;base64,${dataf}`;
+  }
+  else if(type.toLowerCase() == "xlsx"){
+    linkSource = `data:application/vnd.ms-excel;base64,${dataf}`;
+  }
+  else{
+    linkSource = `${dataf}`;
+  }
+  const downloadLink = document.createElement("a");
+  const fileName = name+"."+type;
+  downloadLink.href = linkSource;
+  downloadLink.download = fileName;
+  downloadLink.click();
+}
+
+</script><!-- password addon init -->
+<script src="./Login _ Servilamina Intranet_files/pass-addon.init.js.descarga"></script>
+
+<script>
+    if (!(localStorage.getItem("user-int") === null)) {
+        $("#username").val(localStorage.getItem("user-int"));
+    }
+
+    $('form').submit(function() {
+        $(this).find("button[type='submit']").prop('disabled',true);
+    });
+
+</script>
+
+
+
+</body><editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important"><div dir="ltr" style="all: initial;"><div style="color-scheme: initial; forced-color-adjust: initial; mask: initial; math-depth: initial; position: absolute; position-anchor: initial; appearance: initial; color: initial; font: initial; font-palette: initial; font-synthesis: initial; inset-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; animation-composition: initial; animation: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position-try: initial; position-visibility: initial; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css"><div style="all: initial;"><template shadowrootmode="open"></template></div></div><div style="color-scheme: initial; forced-color-adjust: initial; mask: initial; math-depth: initial; position: absolute; position-anchor: initial; appearance: initial; color: initial; font: initial; font-palette: initial; font-synthesis: initial; inset-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; animation-composition: initial; animation: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position-try: initial; position-visibility: initial; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css"></div></div></editor-card></html>
