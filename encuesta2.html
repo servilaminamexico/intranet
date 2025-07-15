@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuesta Fiesta Fin de Año</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #ffffff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border: 5px solid transparent;
+      background-image:
+        linear-gradient(white, white),
+        linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fad0c4, #ff9a9e);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .field {
+      margin-bottom: 1rem;
+    }
+    .field label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #555;
+    }
+    .field input[type="text"],
+    .field input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .field input[type="text"]:focus,
+    .field input[type="email"]:focus {
+      border-color: #ff9a9e;
+    }
+    form{
+        margin: 30px;
+    }
+    .question {
+      margin-bottom: 1rem;
+    }
+    .question p {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .question label {
+      margin-right: 1rem;
+      color: #555;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: linear-gradient(45deg, #fad0c4, #ff9a9e);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Encuesta de Fin de Año</h1>
+    <p style="text-align:center; color:#666; margin-bottom:1.5rem;">
+      Por favor, contesta el siguiente formulario relacionado a la fiesta de fin de año.
+    </p>
+    <form action="https://www.summitmx.com:4433/SSM/encuesta.php" method="GET">
+      <div class="field">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+      <div class="field">
+        <label for="nomina">Número de nómina:</label>
+        <input type="text" id="nomina" name="nomina" required>
+      </div>
+
+      <div class="question">
+        <p>1. ¿Prefieres que la comida sea tipo buffet?</p>
+        <label><input type="radio" name="q1" value="Si" required> Sí</label>
+        <label><input type="radio" name="q1" value="No"> No</label>
+      </div>
+
+      <div class="question">
+        <p>2. ¿Prefieres que la fiesta sea más temprano y termine a las 5 de la tarde?</p>
+        <label><input type="radio" name="q2" value="Si" required> Sí</label>
+        <label><input type="radio" name="q2" value="No"> No</label>
+      </div>
+
+      <div class="question">
+        <p>3. ¿Prefieres que el presupuesto se gaste en rifas?</p>
+        <label><input type="radio" name="q3" value="Si" required> Sí</label>
+        <label><input type="radio" name="q3" value="No"> No</label>
+      </div>
+
+      <div class="question">
+        <p>4. ¿Te gustaría que hubiera música en vivo en la fiesta?</p>
+        <label><input type="radio" name="q4" value="Si" required> Sí</label>
+        <label><input type="radio" name="q4" value="No"> No</label>
+      </div>
+
+      <button type="submit">Enviar respuestas</button>
+    </form>
+  </div>
+</body>
+</html>
