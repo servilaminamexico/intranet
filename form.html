@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Declinación de Brigada</title>
+  <style>
+    /* Estilos generales y tipografía */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e0e0e0; /* Fondo gris suave fuera de la hoja */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Contenedor principal que simula la hoja con borde verde */
+    .container {
+      background: white;
+      padding: 3rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      /* Borde verde grueso estilo institucional */
+      border: 8px solid #107c10; 
+      position: relative;
+    }
+
+    /* Decoración de esquinas (opcional, para simular el diseño) */
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      border: 2px solid white; /* Pequeño espacio blanco interno */
+      box-sizing: border-box;
+    }
+
+    /* Encabezado */
+    h1 {
+      text-align: center;
+      color: #000;
+      font-family: 'Times New Roman', serif; /* Tipografía serif como en la imagen */
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      text-align: justify;
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #107c10;
+      padding-bottom: 20px;
+    }
+
+    /* Estilos del Formulario */
+    form {
+      margin-top: 20px;
+    }
+
+    .field {
+      margin-bottom: 1.2rem;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+      color: #107c10; /* Verde institucional */
+      font-size: 0.95rem;
+    }
+
+    .field input[type="text"],
+    .field input[type="email"] {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      font-size: 1rem;
+      box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+      transition: border-color 0.3s;
+    }
+
+    .field input:focus {
+      border-color: #107c10;
+      outline: none;
+      background-color: #fff;
+    }
+
+    /* Sección de motivos (Checkboxes/Radios) */
+    .reasons-container {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-left: 5px solid #107c10;
+      margin-bottom: 2rem;
+    }
+
+    .reasons-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+      color: #333;
+    }
+
+    .option-group {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .option-group input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2); /* Hacer el círculo un poco más grande */
+      cursor: pointer;
+      accent-color: #107c10; /* Color del check en navegadores modernos */
+    }
+
+    .option-group label {
+      cursor: pointer;
+      color: #444;
+    }
+
+    /* Botón de envío */
+    button {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #107c10; /* Verde sólido */
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.1s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background-color: #0b570b; /* Verde más oscuro */
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div style="text-align: right; margin-bottom: 10px; color: #aaa; font-size: 0.8rem;">
+       SERVILAMINA SUMMIT
+    </div>
+
+    <h1>COMUNICADO</h1>
+    
+    <div class="subtitle">
+      <p>
+        Se informa a todo el personal administrativo que actualmente <strong>no forma parte de una brigada</strong>, que se les asignará una automáticamente para asegurar el cumplimiento de las normativas de seguridad. 
+      </p>
+      <p>
+        Si usted desea <strong>declinar explícitamente</strong> esta responsabilidad, es necesario completar el siguiente formulario seleccionando el motivo correspondiente. De lo contrario, la asignación procederá automáticamente.
+      </p>
+    </div>
+
+    <form action="https://www.summitmx.com:4433/SSM/encuesta.php" method="GET">
+      
+      <div class="field">
+        <label for="nomina">Número de Nómina:</label>
+        <input type="text" id="nomina" name="nomina" placeholder="Ej. 12345" required>
+      </div>
+
+      <div class="field">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="usuario@empresa.com" required>
+      </div>
+
+      <div class="field">
+        <label for="puesto">Puesto / Cargo:</label>
+        <input type="text" id="puesto" name="puesto" required>
+      </div>
+
+      <div class="reasons-container">
+        <span class="reasons-title">Seleccione el motivo de la declinación:</span>
+        
+        <div class="option-group">
+          <label>
+            <input type="radio" name="motivo" value="Prefiero no responder" checked>
+            Prefiero no responder
+          </label>
+        </div>
+
+        <div class="option-group">
+          <label>
+            <input type="radio" name="motivo" value="Hijos menores">
+            Cuidado de hijos menores / lactancia
+          </label>
+        </div>
+
+        <div class="option-group">
+          <label>
+            <input type="radio" name="motivo" value="Falta de tiempo">
+            Carga de trabajo / Incompatibilidad de horario
+          </label>
+        </div>
+
+        <div class="option-group">
+          <label>
+            <input type="radio" name="motivo" value="Salud">
+            Impedimento físico o condición médica
+          </label>
+        </div>
+      </div>
+
+      <button type="submit">Enviar Declinación</button>
+      
+      <p class="footer-note">Gracias.</p>
+    </form>
+  </div>
+
+</body>
+</html>
